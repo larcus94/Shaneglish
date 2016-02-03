@@ -197,9 +197,9 @@
 		4948A95D1C62532F00BE94D7 /* Gangsta */ = {
 			isa = PBXGroup;
 			children = (
+				4948A9601C62532F00BE94D7 /* Gangsta.swift */,
 				4948A95E1C62532F00BE94D7 /* Entry.swift */,
 				4948A95F1C62532F00BE94D7 /* EntryManager.swift */,
-				4948A9601C62532F00BE94D7 /* Gangsta.swift */,
 			);
 			path = Gangsta;
 			sourceTree = "<group>";
@@ -332,7 +332,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Carthography.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
@@ -351,7 +351,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Carthography.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
@@ -607,6 +607,7 @@
 				4948A92D1C6251EE00BE94D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4948A9451C62529800BE94D7 /* Build configuration list for PBXNativeTarget "Shaneglish Widget" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +616,7 @@
 				4948A9471C62529800BE94D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

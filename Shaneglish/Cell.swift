@@ -114,7 +114,7 @@ class Cell: UICollectionViewCell {
             meaningLabel.top == wordLabel.bottom + spacing.y
             meaningLabel.right == contentView.right - spacing.x
             exampleLabel.left == contentView.left + 2 * spacing.x
-            exampleLabel.top == meaningLabel.bottom + spacing.y
+            exampleLabel.top == meaningLabel.bottom + 2 * spacing.y
             exampleLabel.right == contentView.right - spacing.x
             exampleLabel.bottom == contentView.bottom - 2 * spacing.y
         }

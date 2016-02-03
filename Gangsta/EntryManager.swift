@@ -14,7 +14,7 @@ private let entryKey = "entries"
 
 class EntryManager {
     
-    private let defaults = NSUserDefaults(suiteName: "group.laurinbrandner.UrbanDictionary") ?? NSUserDefaults.standardUserDefaults()
+    private let defaults = NSUserDefaults(suiteName: "group.ch.laurinbrandner.Shaneglish") ?? NSUserDefaults.standardUserDefaults()
     
     private(set) var allEntries = [Entry]()
     

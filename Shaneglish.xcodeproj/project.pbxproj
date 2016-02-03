@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4948A91D1C6251EE00BE94D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A91C1C6251EE00BE94D7 /* AppDelegate.swift */; };
+		4948A9241C6251EE00BE94D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4948A9231C6251EE00BE94D7 /* Assets.xcassets */; };
+		4948A9271C6251EE00BE94D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4948A9251C6251EE00BE94D7 /* LaunchScreen.storyboard */; };
+		4948A9301C62526500BE94D7 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A92E1C62526500BE94D7 /* Cell.swift */; };
+		4948A9311C62526500BE94D7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A92F1C62526500BE94D7 /* TableViewController.swift */; };
+		4948A93A1C62529800BE94D7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A9391C62529800BE94D7 /* NotificationCenter.framework */; };
+		4948A93D1C62529800BE94D7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A93C1C62529800BE94D7 /* TodayViewController.swift */; };
+		4948A9401C62529800BE94D7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4948A93E1C62529800BE94D7 /* MainInterface.storyboard */; };
+		4948A9441C62529800BE94D7 /* Shaneglish Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4948A9371C62529800BE94D7 /* Shaneglish Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4948A94F1C6252C800BE94D7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A9491C6252C800BE94D7 /* Alamofire.framework */; };
+		4948A9501C6252C800BE94D7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A9491C6252C800BE94D7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4948A9511C6252C800BE94D7 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94A1C6252C800BE94D7 /* Cartography.framework */; };
+		4948A9521C6252C800BE94D7 /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94A1C6252C800BE94D7 /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4948A9531C6252C800BE94D7 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94B1C6252C800BE94D7 /* Kanna.framework */; };
+		4948A9541C6252C800BE94D7 /* Kanna.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94B1C6252C800BE94D7 /* Kanna.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4948A9571C6252C800BE94D7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94D1C6252C800BE94D7 /* RxSwift.framework */; };
+		4948A9581C6252C800BE94D7 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94D1C6252C800BE94D7 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4948A9591C6252C800BE94D7 /* Whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94E1C6252C800BE94D7 /* Whisper.framework */; };
+		4948A95A1C6252C800BE94D7 /* Whisper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94E1C6252C800BE94D7 /* Whisper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4948A9611C62532F00BE94D7 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A95E1C62532F00BE94D7 /* Entry.swift */; };
+		4948A9621C62532F00BE94D7 /* EntryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A95F1C62532F00BE94D7 /* EntryManager.swift */; };
+		4948A9631C62532F00BE94D7 /* Gangsta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A9601C62532F00BE94D7 /* Gangsta.swift */; };
+		4948A9641C62533700BE94D7 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A95E1C62532F00BE94D7 /* Entry.swift */; };
+		4948A9651C62533700BE94D7 /* EntryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A95F1C62532F00BE94D7 /* EntryManager.swift */; };
+		4948A9661C62533700BE94D7 /* Gangsta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A9601C62532F00BE94D7 /* Gangsta.swift */; };
+		4948A9671C62535C00BE94D7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A9491C6252C800BE94D7 /* Alamofire.framework */; };
+		4948A9681C62535C00BE94D7 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94A1C6252C800BE94D7 /* Cartography.framework */; };
+		4948A9691C62535C00BE94D7 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94B1C6252C800BE94D7 /* Kanna.framework */; };
+		4948A96A1C62535C00BE94D7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94D1C6252C800BE94D7 /* RxSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4948A9421C62529800BE94D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4948A9111C6251EE00BE94D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4948A9361C62529800BE94D7;
+			remoteInfo = "Shaneglish Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4948A9481C62529800BE94D7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4948A9441C62529800BE94D7 /* Shaneglish Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4948A95B1C6252C800BE94D7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4948A9581C6252C800BE94D7 /* RxSwift.framework in Embed Frameworks */,
+				4948A9501C6252C800BE94D7 /* Alamofire.framework in Embed Frameworks */,
+				4948A95A1C6252C800BE94D7 /* Whisper.framework in Embed Frameworks */,
+				4948A9521C6252C800BE94D7 /* Cartography.framework in Embed Frameworks */,
+				4948A9541C6252C800BE94D7 /* Kanna.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4948A9191C6251EE00BE94D7 /* Shaneglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shaneglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4948A91C1C6251EE00BE94D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4948A9231C6251EE00BE94D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4948A9261C6251EE00BE94D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4948A9281C6251EE00BE94D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4948A92E1C62526500BE94D7 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		4948A92F1C62526500BE94D7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4948A9371C62529800BE94D7 /* Shaneglish Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Shaneglish Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4948A9391C62529800BE94D7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4948A93C1C62529800BE94D7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4948A93F1C62529800BE94D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4948A9411C62529800BE94D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4948A9491C6252C800BE94D7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		4948A94A1C6252C800BE94D7 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
+		4948A94B1C6252C800BE94D7 /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/iOS/Kanna.framework; sourceTree = "<group>"; };
+		4948A94D1C6252C800BE94D7 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		4948A94E1C6252C800BE94D7 /* Whisper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Whisper.framework; path = Carthage/Build/iOS/Whisper.framework; sourceTree = "<group>"; };
+		4948A95E1C62532F00BE94D7 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		4948A95F1C62532F00BE94D7 /* EntryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryManager.swift; sourceTree = "<group>"; };
+		4948A9601C62532F00BE94D7 /* Gangsta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gangsta.swift; sourceTree = "<group>"; };
+		4948A96C1C62540300BE94D7 /* Shaneglish Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Shaneglish Widget.entitlements"; sourceTree = "<group>"; };
+		4948A96D1C62545000BE94D7 /* Shaneglish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Shaneglish.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4948A9161C6251EE00BE94D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4948A9571C6252C800BE94D7 /* RxSwift.framework in Frameworks */,
+				4948A94F1C6252C800BE94D7 /* Alamofire.framework in Frameworks */,
+				4948A9591C6252C800BE94D7 /* Whisper.framework in Frameworks */,
+				4948A9511C6252C800BE94D7 /* Cartography.framework in Frameworks */,
+				4948A9531C6252C800BE94D7 /* Kanna.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4948A9341C62529800BE94D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4948A9671C62535C00BE94D7 /* Alamofire.framework in Frameworks */,
+				4948A9681C62535C00BE94D7 /* Cartography.framework in Frameworks */,
+				4948A9691C62535C00BE94D7 /* Kanna.framework in Frameworks */,
+				4948A96A1C62535C00BE94D7 /* RxSwift.framework in Frameworks */,
+				4948A93A1C62529800BE94D7 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4948A9101C6251EE00BE94D7 = {
+			isa = PBXGroup;
+			children = (
+				4948A95D1C62532F00BE94D7 /* Gangsta */,
+				4948A91B1C6251EE00BE94D7 /* Shaneglish */,
+				4948A93B1C62529800BE94D7 /* Shaneglish Widget */,
+				4948A9381C62529800BE94D7 /* Frameworks */,
+				4948A91A1C6251EE00BE94D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4948A91A1C6251EE00BE94D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4948A9191C6251EE00BE94D7 /* Shaneglish.app */,
+				4948A9371C62529800BE94D7 /* Shaneglish Widget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4948A91B1C6251EE00BE94D7 /* Shaneglish */ = {
+			isa = PBXGroup;
+			children = (
+				4948A91C1C6251EE00BE94D7 /* AppDelegate.swift */,
+				4948A92F1C62526500BE94D7 /* TableViewController.swift */,
+				4948A92E1C62526500BE94D7 /* Cell.swift */,
+				4948A9321C62526B00BE94D7 /* Supporting Files */,
+			);
+			path = Shaneglish;
+			sourceTree = "<group>";
+		};
+		4948A9321C62526B00BE94D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4948A96D1C62545000BE94D7 /* Shaneglish.entitlements */,
+				4948A9231C6251EE00BE94D7 /* Assets.xcassets */,
+				4948A9251C6251EE00BE94D7 /* LaunchScreen.storyboard */,
+				4948A9281C6251EE00BE94D7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4948A9381C62529800BE94D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4948A9491C6252C800BE94D7 /* Alamofire.framework */,
+				4948A94A1C6252C800BE94D7 /* Cartography.framework */,
+				4948A94B1C6252C800BE94D7 /* Kanna.framework */,
+				4948A94D1C6252C800BE94D7 /* RxSwift.framework */,
+				4948A94E1C6252C800BE94D7 /* Whisper.framework */,
+				4948A9391C62529800BE94D7 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4948A93B1C62529800BE94D7 /* Shaneglish Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4948A93C1C62529800BE94D7 /* TodayViewController.swift */,
+				4948A96B1C6253DB00BE94D7 /* Supporting Files */,
+			);
+			path = "Shaneglish Widget";
+			sourceTree = "<group>";
+		};
+		4948A95D1C62532F00BE94D7 /* Gangsta */ = {
+			isa = PBXGroup;
+			children = (
+				4948A95E1C62532F00BE94D7 /* Entry.swift */,
+				4948A95F1C62532F00BE94D7 /* EntryManager.swift */,
+				4948A9601C62532F00BE94D7 /* Gangsta.swift */,
+			);
+			path = Gangsta;
+			sourceTree = "<group>";
+		};
+		4948A96B1C6253DB00BE94D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4948A96C1C62540300BE94D7 /* Shaneglish Widget.entitlements */,
+				4948A93E1C62529800BE94D7 /* MainInterface.storyboard */,
+				4948A9411C62529800BE94D7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4948A9181C6251EE00BE94D7 /* Shaneglish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4948A92B1C6251EE00BE94D7 /* Build configuration list for PBXNativeTarget "Shaneglish" */;
+			buildPhases = (
+				4948A9151C6251EE00BE94D7 /* Sources */,
+				4948A9161C6251EE00BE94D7 /* Frameworks */,
+				4948A9171C6251EE00BE94D7 /* Resources */,
+				4948A9481C62529800BE94D7 /* Embed App Extensions */,
+				4948A95B1C6252C800BE94D7 /* Embed Frameworks */,
+				4948A95C1C6252DA00BE94D7 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4948A9431C62529800BE94D7 /* PBXTargetDependency */,
+			);
+			name = Shaneglish;
+			productName = Shaneglish;
+			productReference = 4948A9191C6251EE00BE94D7 /* Shaneglish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4948A9361C62529800BE94D7 /* Shaneglish Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4948A9451C62529800BE94D7 /* Build configuration list for PBXNativeTarget "Shaneglish Widget" */;
+			buildPhases = (
+				4948A9331C62529800BE94D7 /* Sources */,
+				4948A9341C62529800BE94D7 /* Frameworks */,
+				4948A9351C62529800BE94D7 /* Resources */,
+				4948A96E1C62550B00BE94D7 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shaneglish Widget";
+			productName = "Shaneglish Widget";
+			productReference = 4948A9371C62529800BE94D7 /* Shaneglish Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4948A9111C6251EE00BE94D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Laurin Brandner";
+				TargetAttributes = {
+					4948A9181C6251EE00BE94D7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5953RHWYWT;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					4948A9361C62529800BE94D7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5953RHWYWT;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4948A9141C6251EE00BE94D7 /* Build configuration list for PBXProject "Shaneglish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4948A9101C6251EE00BE94D7;
+			productRefGroup = 4948A91A1C6251EE00BE94D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4948A9181C6251EE00BE94D7 /* Shaneglish */,
+				4948A9361C62529800BE94D7 /* Shaneglish Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4948A9171C6251EE00BE94D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4948A9271C6251EE00BE94D7 /* LaunchScreen.storyboard in Resources */,
+				4948A9241C6251EE00BE94D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4948A9351C62529800BE94D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4948A9401C62529800BE94D7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4948A95C1C6252DA00BE94D7 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Carthography.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Whisper.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		4948A96E1C62550B00BE94D7 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Carthography.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Whisper.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4948A9151C6251EE00BE94D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4948A9611C62532F00BE94D7 /* Entry.swift in Sources */,
+				4948A91D1C6251EE00BE94D7 /* AppDelegate.swift in Sources */,
+				4948A9311C62526500BE94D7 /* TableViewController.swift in Sources */,
+				4948A9621C62532F00BE94D7 /* EntryManager.swift in Sources */,
+				4948A9301C62526500BE94D7 /* Cell.swift in Sources */,
+				4948A9631C62532F00BE94D7 /* Gangsta.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4948A9331C62529800BE94D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4948A9651C62533700BE94D7 /* EntryManager.swift in Sources */,
+				4948A9661C62533700BE94D7 /* Gangsta.swift in Sources */,
+				4948A9641C62533700BE94D7 /* Entry.swift in Sources */,
+				4948A93D1C62529800BE94D7 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4948A9431C62529800BE94D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4948A9361C62529800BE94D7 /* Shaneglish Widget */;
+			targetProxy = 4948A9421C62529800BE94D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4948A9251C6251EE00BE94D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4948A9261C6251EE00BE94D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4948A93E1C62529800BE94D7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4948A93F1C62529800BE94D7 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4948A9291C6251EE00BE94D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4948A92A1C6251EE00BE94D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4948A92C1C6251EE00BE94D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Shaneglish/Shaneglish.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = Shaneglish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.laurinbrandner.Shaneglish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		4948A92D1C6251EE00BE94D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Shaneglish/Shaneglish.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = Shaneglish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.laurinbrandner.Shaneglish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		4948A9461C62529800BE94D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Shaneglish Widget/Shaneglish Widget.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "Shaneglish Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.laurinbrandner.Shaneglish.Shaneglish-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4948A9471C62529800BE94D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Shaneglish Widget/Shaneglish Widget.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "Shaneglish Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.laurinbrandner.Shaneglish.Shaneglish-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4948A9141C6251EE00BE94D7 /* Build configuration list for PBXProject "Shaneglish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4948A9291C6251EE00BE94D7 /* Debug */,
+				4948A92A1C6251EE00BE94D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4948A92B1C6251EE00BE94D7 /* Build configuration list for PBXNativeTarget "Shaneglish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4948A92C1C6251EE00BE94D7 /* Debug */,
+				4948A92D1C6251EE00BE94D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4948A9451C62529800BE94D7 /* Build configuration list for PBXNativeTarget "Shaneglish Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4948A9461C62529800BE94D7 /* Debug */,
+				4948A9471C62529800BE94D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4948A9111C6251EE00BE94D7 /* Project object */;
+}

@@ -245,7 +245,6 @@
 				4948A9331C62529800BE94D7 /* Sources */,
 				4948A9341C62529800BE94D7 /* Frameworks */,
 				4948A9351C62529800BE94D7 /* Resources */,
-				4948A96E1C62550B00BE94D7 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -327,25 +326,6 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		4948A95C1C6252DA00BE94D7 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Cartography.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Whisper.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		4948A96E1C62550B00BE94D7 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

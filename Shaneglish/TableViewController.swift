@@ -90,13 +90,13 @@ class TableViewController: UICollectionViewController {
                     if gotNewEntries {
                         self.reloadCollectionView()
                     }
-                    }, onError: { _ in
-                        if let navigationController = self.navigationController {
-                            let message = Message(title: "Yo, check ur interwebz", backgroundColor: .redColor())
+                }, onError: { _ in
+                    if let navigationController = self.navigationController {
+                        let message = Message(title: "Yo, check ur interwebz", backgroundColor: .redColor())
                             Whisper(message, to: navigationController, action: .Show)
                         }
                     }, onCompleted: nil, onDisposed: {
-                        self.loading = false
+                    self.loading = false
                 }).addDisposableTo(rx_disposeBag)
         }
     }

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="Q4c-T8-D59">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -37,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¯\_(ツ)_/¯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BZ-MJ-8cz">
-                                <rect key="frame" x="20" y="0.0" width="560" height="536"/>
+                                <rect key="frame" x="20" y="-64" width="560" height="600"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -45,10 +44,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4BZ-MJ-8cz" firstAttribute="top" secondItem="WsZ-S6-kVF" secondAttribute="bottom" id="05g-mE-FXl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4BZ-MJ-8cz" secondAttribute="trailing" id="3hN-Dc-78M"/>
-                            <constraint firstItem="4BZ-MJ-8cz" firstAttribute="leading" secondItem="zAz-mO-4am" secondAttribute="leadingMargin" id="C9y-JW-U9V"/>
-                            <constraint firstItem="xLC-Am-qgH" firstAttribute="top" secondItem="4BZ-MJ-8cz" secondAttribute="bottom" id="l5R-Ta-AEA"/>
+                            <constraint firstItem="4BZ-MJ-8cz" firstAttribute="trailing" secondItem="zAz-mO-4am" secondAttribute="trailingMargin" id="1f5-H3-zk6"/>
+                            <constraint firstItem="4BZ-MJ-8cz" firstAttribute="top" secondItem="WsZ-S6-kVF" secondAttribute="bottom" constant="-64" id="HFP-c8-OFE"/>
+                            <constraint firstItem="4BZ-MJ-8cz" firstAttribute="leading" secondItem="zAz-mO-4am" secondAttribute="leadingMargin" id="RTW-JY-B3Z"/>
+                            <constraint firstItem="xLC-Am-qgH" firstAttribute="top" secondItem="4BZ-MJ-8cz" secondAttribute="bottom" id="xHO-Ne-ehX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vog-a7-yDv"/>

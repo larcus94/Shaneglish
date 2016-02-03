@@ -14,8 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        application.statusBarStyle = .LightContent
-        
         let navigationController = UINavigationController(rootViewController: TableViewController())
         navigationController.navigationBar.barTintColor = UIColor(red: 29/255, green: 35/255, blue: 57/255, alpha: 1)
         navigationController.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]

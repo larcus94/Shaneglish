@@ -11,6 +11,8 @@ import Cartography
 import RxSwift
 import NotificationCenter
 
+private let spacing = CGPoint(x: 20, y: 20)
+
 class TodayViewController: UIViewController {
     
     private lazy var entryManager = EntryManager()
@@ -59,7 +61,6 @@ class TodayViewController: UIViewController {
         view.addSubview(exampleLabel!)
         
         let priority = UILayoutPriorityRequired - 1
-        let spacing = CGPoint(x: 20, y: 20)
         constrain(view, wordLabel!, meaningLabel!, exampleLabel!) { view, wordLabel, meaningLabel, exampleLabel in
             wordLabel.left == view.left
             wordLabel.top == view.top + spacing.y ~ priority
@@ -78,6 +79,14 @@ class TodayViewController: UIViewController {
         super.viewDidLoad()
         
         reloadContent()
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        wordLabel?.preferredMaxLayoutWidth = size.width - spacing.x
+        meaningLabel?.preferredMaxLayoutWidth = size.width - spacing.x
+        exampleLabel?.preferredMaxLayoutWidth = size.width - 2 * spacing.x
+        
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
     }
     
     // MARK: - Content

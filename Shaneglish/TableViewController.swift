@@ -170,6 +170,12 @@ extension TableViewController {
         let items = [entry.URL]
         
         let controller = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        controller.popoverPresentationController?.sourceView = collectionView
+        
+        if let cell = collectionView.cellForItemAtIndexPath(indexPath) {
+            controller.popoverPresentationController?.sourceRect = cell.frame
+        }
+        
         presentViewController(controller, animated: true, completion: nil)
     }
     

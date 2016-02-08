@@ -166,17 +166,16 @@ extension TableViewController {
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         collectionView.deselectItemAtIndexPath(indexPath, animated: true)
         
-        let entry = entryManager.allEntries[indexPath.item]
-        let items = [entry.URL]
-        
-        let controller = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        controller.popoverPresentationController?.sourceView = collectionView
-        
-        if let cell = collectionView.cellForItemAtIndexPath(indexPath) {
-            controller.popoverPresentationController?.sourceRect = cell.frame
+        if let URL = entryManager.allEntries[indexPath.item].URL {
+            let controller = UIActivityViewController(activityItems: [URL], applicationActivities: nil)
+            controller.popoverPresentationController?.sourceView = collectionView
+            
+            if let cell = collectionView.cellForItemAtIndexPath(indexPath) {
+                controller.popoverPresentationController?.sourceRect = cell.frame
+            }
+            
+            presentViewController(controller, animated: true, completion: nil)
         }
-        
-        presentViewController(controller, animated: true, completion: nil)
     }
     
 }

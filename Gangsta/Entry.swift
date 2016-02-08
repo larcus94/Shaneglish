@@ -23,9 +23,9 @@ struct Entry {
     
     let date: NSDate
     
-    var URL: NSURL {
+    var URL: NSURL? {
         let encodedWord = word.componentsSeparatedByCharactersInSet(.whitespaceAndNewlineCharacterSet()).joinWithSeparator("+")
-        return NSURL(string: "http://www.urbandictionary.com/define.php?term=\(encodedWord)")!
+        return NSURL(string: "http://www.urbandictionary.com/define.php?term=\(encodedWord)")
     }
     
     var payload: [String: AnyObject] {

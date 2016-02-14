@@ -75,10 +75,18 @@ class TodayViewController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        reloadContent()
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        reloadContent()
+        entryManager.getNewEntries().subscribeNext { newEntries in
+            self.reloadContent()
+        }.addDisposableTo(rx_disposeBag)
     }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {

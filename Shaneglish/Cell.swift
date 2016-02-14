@@ -30,7 +30,7 @@ class Cell: UICollectionViewCell {
     private let wordLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = .boldSystemFontOfSize(20)
+        label.font = .boldSystemFontOfSize(UIFont.labelFontSize())
         label.textColor = UIColor(red: 20/255, green: 79/255, blue: 230/255, alpha: 1)
         
         return label

@@ -32,7 +32,7 @@ class TodayViewController: UIViewController {
         wordLabel = {
             let label = UILabel()
             label.numberOfLines = 0
-            label.font = .boldSystemFontOfSize(20)
+            label.font = .boldSystemFontOfSize(UIFont.labelFontSize())
             label.textColor = .whiteColor()
             
             return label

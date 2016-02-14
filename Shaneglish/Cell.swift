@@ -20,7 +20,7 @@ class Cell: UICollectionViewCell {
     
     var entry: Entry? {
         didSet {
-            wordLabel.text = "asdf jas;ldfj kaskdlfjkl a;jsfl;asa;k sldfjlk;a sjdklfakl;sd jkfaks;df;l a"
+            wordLabel.text = entry?.word
             dateLabel.text = entry.map { dateFormatter.stringFromDate($0.date) }
             meaningLabel.text = entry?.meaning
             exampleLabel.text = entry?.example

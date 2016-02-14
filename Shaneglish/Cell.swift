@@ -20,7 +20,7 @@ class Cell: UICollectionViewCell {
     
     var entry: Entry? {
         didSet {
-            wordLabel.text = entry?.word
+            wordLabel.text = "asdf jas;ldfj kaskdlfjkl a;jsfl;asa;k sldfjlk;a sjdklfakl;sd jkfaks;df;l a"
             dateLabel.text = entry.map { dateFormatter.stringFromDate($0.date) }
             meaningLabel.text = entry?.meaning
             exampleLabel.text = entry?.example
@@ -30,7 +30,7 @@ class Cell: UICollectionViewCell {
     private let wordLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = .boldSystemFontOfSize(22)
+        label.font = .boldSystemFontOfSize(20)
         label.textColor = UIColor(red: 20/255, green: 79/255, blue: 230/255, alpha: 1)
         
         return label
@@ -39,7 +39,7 @@ class Cell: UICollectionViewCell {
     private let meaningLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = .systemFontOfSize(19)
+        label.font = .systemFontOfSize(UIFont.labelFontSize())
         
         return label
     }()
@@ -48,7 +48,7 @@ class Cell: UICollectionViewCell {
         let label = UILabel()
         label.numberOfLines = 0
         label.textColor = UIColor(red: 44/255, green: 53/255, blue: 60/255, alpha: 1)
-        label.font = .italicSystemFontOfSize(17)
+        label.font = .italicSystemFontOfSize(UIFont.systemFontSize())
         
         return label
     }()
@@ -100,6 +100,8 @@ class Cell: UICollectionViewCell {
         contentView.addSubview(separatorView)
         
         let spacing = CGPoint(x: 20, y: 10)
+        
+        dateLabel.setContentCompressionResistancePriority(UILayoutPriorityRequired, forAxis: .Horizontal)
         
         constrain(contentView, wordLabel, dateLabel) { contentView, wordLabel, dateLabel in
             wordLabel.left == contentView.left + spacing.x

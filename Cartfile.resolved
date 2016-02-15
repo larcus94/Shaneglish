@@ -1,5 +1,6 @@
 github "Alamofire/Alamofire" "3.2.0"
 github "robb/Cartography" "0.6.0"
 github "tid-kijyun/Kanna" "1.0.4"
-github "ReactiveX/RxSwift" "2.1.0"
+github "ReactiveX/RxSwift" "2.2.0"
 github "hyperoslo/Whisper" "2.0.2"
+github "RxSwiftCommunity/RxAlamofire" "4ac1e634dcef7202d801465c82947bacf646b132"

@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import Kanna
 import RxSwift
+import RxAlamofire
 
 private let dateFormatter: NSDateFormatter = {
     let formatter = NSDateFormatter()
@@ -21,22 +22,8 @@ private let dateFormatter: NSDateFormatter = {
 struct Gangsta {
     
     static func getDailyEntries() -> Observable<[Entry]> {
-        return Observable.create { observer in
-            let URL = NSURL(string: "https://www.urbandictionary.com")!
-            let request = Alamofire.request(.GET, URL).responseData { response in
-                switch response.result {
-                case .Success(let HTML):
-                    observer.onNext(parseHTML(HTML))
-                case .Failure(let error):
-                    observer.onError(error)
-                }
-                observer.onCompleted()
-            }
-            
-            return AnonymousDisposable {
-                request.cancel()
-            }
-        }
+        return data(.GET, "https://www.urbandictionary.com").observeOn(MainScheduler.instance)
+                                                            .map { parseHTML($0) }
     }
     
     private static func parseHTML(HTML: NSData) -> [Entry] {

@@ -36,6 +36,12 @@
 		4948A9681C62535C00BE94D7 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94A1C6252C800BE94D7 /* Cartography.framework */; };
 		4948A9691C62535C00BE94D7 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94B1C6252C800BE94D7 /* Kanna.framework */; };
 		4948A96A1C62535C00BE94D7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4948A94D1C6252C800BE94D7 /* RxSwift.framework */; };
+		49CB1D911C7211DD0015191B /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB1D901C7211DD0015191B /* RxAlamofire.framework */; };
+		49CB1D921C7211DD0015191B /* RxAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB1D901C7211DD0015191B /* RxAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49CB1D931C7211F40015191B /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB1D901C7211DD0015191B /* RxAlamofire.framework */; };
+		49CB1D951C7213D90015191B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB1D941C7213D90015191B /* RxCocoa.framework */; };
+		49CB1D961C7213D90015191B /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB1D941C7213D90015191B /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49CB1D971C7213F90015191B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB1D941C7213D90015191B /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,9 +74,11 @@
 			files = (
 				4948A9581C6252C800BE94D7 /* RxSwift.framework in Embed Frameworks */,
 				4948A9501C6252C800BE94D7 /* Alamofire.framework in Embed Frameworks */,
+				49CB1D961C7213D90015191B /* RxCocoa.framework in Embed Frameworks */,
 				4948A95A1C6252C800BE94D7 /* Whisper.framework in Embed Frameworks */,
 				4948A9521C6252C800BE94D7 /* Cartography.framework in Embed Frameworks */,
 				4948A9541C6252C800BE94D7 /* Kanna.framework in Embed Frameworks */,
+				49CB1D921C7211DD0015191B /* RxAlamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +108,8 @@
 		4948A9601C62532F00BE94D7 /* Gangsta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gangsta.swift; sourceTree = "<group>"; };
 		4948A96C1C62540300BE94D7 /* Shaneglish Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Shaneglish Widget.entitlements"; sourceTree = "<group>"; };
 		4948A96D1C62545000BE94D7 /* Shaneglish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Shaneglish.entitlements; sourceTree = "<group>"; };
+		49CB1D901C7211DD0015191B /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
+		49CB1D941C7213D90015191B /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +119,11 @@
 			files = (
 				4948A9571C6252C800BE94D7 /* RxSwift.framework in Frameworks */,
 				4948A94F1C6252C800BE94D7 /* Alamofire.framework in Frameworks */,
+				49CB1D951C7213D90015191B /* RxCocoa.framework in Frameworks */,
 				4948A9591C6252C800BE94D7 /* Whisper.framework in Frameworks */,
 				4948A9511C6252C800BE94D7 /* Cartography.framework in Frameworks */,
 				4948A9531C6252C800BE94D7 /* Kanna.framework in Frameworks */,
+				49CB1D911C7211DD0015191B /* RxAlamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CB1D971C7213F90015191B /* RxCocoa.framework in Frameworks */,
+				49CB1D931C7211F40015191B /* RxAlamofire.framework in Frameworks */,
 				4948A9671C62535C00BE94D7 /* Alamofire.framework in Frameworks */,
 				4948A9681C62535C00BE94D7 /* Cartography.framework in Frameworks */,
 				4948A9691C62535C00BE94D7 /* Kanna.framework in Frameworks */,
@@ -175,6 +189,8 @@
 		4948A9381C62529800BE94D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49CB1D941C7213D90015191B /* RxCocoa.framework */,
+				49CB1D901C7211DD0015191B /* RxAlamofire.framework */,
 				4948A9491C6252C800BE94D7 /* Alamofire.framework */,
 				4948A94A1C6252C800BE94D7 /* Cartography.framework */,
 				4948A94B1C6252C800BE94D7 /* Kanna.framework */,
@@ -336,6 +352,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Whisper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			name = Carthage;
 			outputPaths = (
